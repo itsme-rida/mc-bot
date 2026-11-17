@@ -1,10 +1,4 @@
-const express = require('express');
 const mineflayer = require('mineflayer');
-
-// سيرفر ويب صغير باش الاستضافة تعرف أن البوت خدام
-const app = express();
-app.get('/', (req, res) => res.send('Bot is alive!'));
-app.listen(process.env.PORT || 3000);
 
 function createBot() {
   const bot = mineflayer.createBot({
